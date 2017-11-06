@@ -41,7 +41,40 @@ function SumaArray3(numeros) {
 }
 let sumavalor3 = SumaArray3([2, 3, 4, 5]);
 console.log(sumavalor3);
+/**
+ * @description Busca al alumno dentro de una lista
+ * @param {array} listaAlumnos
+ * @param {Aluno} alumno alumno a buscar
+ * @return {Boolean}
+ */
 
-function BuscarAlumno(){
-    
+function BuscarAlumno(listaAlumnos, alumno) {
+    let encontrado = false
+    for (let alum of listaAlumnos) {
+        if (alum.nombre == alumno.nombre && alum.apelidos == alumno.apellidos) {
+            encontrado = true;
+        }
+    }
+    return encontrado;
+
+}
+
+let alumnos = [
+    {
+        nombre: "Pepe",
+        apellidos: "Perez"
+
+    },
+    {
+        nombre: "Juan",
+        apellidos: "Martinez"
+    },
+    {
+        nombre: "Pedro",
+        apellidos: "Parrales"
+    }
+];
+let alumno = {
+    nombre: "Laura",
+    apellido: "Lopez",
 }

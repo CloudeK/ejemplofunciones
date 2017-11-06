@@ -41,3 +41,7 @@ function SumaArray3(numeros) {
 }
 let sumavalor3 = SumaArray3([2, 3, 4, 5]);
 console.log(sumavalor3);
+
+function BuscarAlumno(){
+    
+}

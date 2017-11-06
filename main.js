@@ -51,7 +51,7 @@ console.log(sumavalor3);
 function BuscarAlumno(listaAlumnos, alumno) {
     let encontrado = false
     for (let alum of listaAlumnos) {
-        if (alum.nombre == alumno.nombre && alum.apelidos == alumno.apellidos) {
+        if (alum.nombre == alumno.nombre && alum.apelidos && alumno.apellidos) {
             encontrado = true;
         }
     }
@@ -75,6 +75,9 @@ let alumnos = [
     }
 ];
 let alumno = {
-    nombre: "Laura",
-    apellido: "Lopez",
+    nombre: "Pepe",
+    apellidos: "Perez"
 }
+
+let resultado = BuscarAlumno(alumnos, alumno);
+console.log(resultado);
